@@ -34,3 +34,36 @@ console.log(arr);
 
 arr = ["1","2","3"].map(val=>parseInt(val));
 console.log(arr);
+
+//returning object literal
+// Parenthesize the body of function to return an object literal expression:
+//params => ({foo: bar}) 
+var winners = ["a","b","c"].map((val,i)=>({name:val,place:i}));
+console.log(winners);
+
+
+const race = '100m Dash';
+var racers = ['Hunter Gath', 'Singa Song', 'Imda Bos'];
+const win = racers.map((val, i) => ({name:val, race, place: i + 1}))
+console.log(win);
+
+
+
+const isFit = [22,45,33].filter(val => {if(val>=30) {return val+1}});
+console.log(isFit);
+
+
+var xs = ['10', '10', '10'];
+
+xs = xs.map(val=>parseInt);
+
+console.log(xs);
+
+var elements = [
+    'Hydrogen',
+    'Helium',
+    'Lithium',
+    'Beryllium'
+  ];
+  var newEle = elements.map(({ length }) => length);
+  console.log(newEle);

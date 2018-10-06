@@ -18,6 +18,6 @@ console.log(person);
 person.name="anusha";
 console.log(person);
 
-Object.freeze(person);
-person.name="anusha nadig";
-console.log(person.name);
+Object.freeze(person.name);
+person.age=24;
+console.log(person.age);

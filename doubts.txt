@@ -1,2 +1,45 @@
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Using_map_generically
 
+const isFit = [22,45,33].map(val => {if(val>=30) {return val+1}});
+console.log(isFit);
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Polyfill
+
+what's new.target?
+
+rest parameters, default parameters
+
+throwaway variable
+
+var elements = [
+  'Hydrogen',
+  'Helium',
+  'Lithium',
+  'Beryllium'
+]; 
+elements.map(({ length }) => length);
+
+elements.map((el) => {const {length} = el})
+
+method vs function
+
+Object.defineProperty
+
+protoType Property
+
+
+yield
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#Parsing_order
+
+https://github.com/wesbos/es6-articles/blob/master/08%20-%20Arrow%20Functions%20and%20this.md
+
+when not to use Arrow_functions?
+
+https://github.com/wesbos/es6-articles/blob/master/13%20-%20Creating%20HTML%20fragments%20with%20Template%20Literals.md
+
+var a= 10
+const a =10
+
+array.reduce
+
