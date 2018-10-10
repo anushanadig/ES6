@@ -31,7 +31,7 @@ const person = {
     name : "anusha",
     age : 23,
    // printDetails : ()=>console.log(this.name)
-   printDetails : function(){
+   printDetails(){ //es6 syntax
        console.log(this.name);
 
        //(function (){console.log(this.name)}); - doesn't work 
@@ -40,6 +40,26 @@ const person = {
    }
 }
 
-
+const person2 = {
+    name : "anusha",
+    age : 23,
+    cities : ["cta","blr","ckm"],
+    printCities(){ //es6 syntax
+       return this.cities.map((city)=>console.log(city))
+       
+   }
+}
+console.log(person2);
+person2.printCities();
 person.printDetails();
 
+
+const multiplier = {
+    numbers: [1,2,3],
+    multiplyBy:3,
+    multiply (){
+        return this.numbers.map(number=>console.log(number*this.multiplyBy));
+    }
+}
+
+multiplier.multiply();
