@@ -66,3 +66,17 @@ console.log(foo.bar);
 //2. Is the function called by call() or apply()
 //3. Is the funcction called on a context object
 //4. Default - global object(except strict mode)
+
+var bar = "global";
+
+function random() {
+  return () => console.log(this.bar);
+}
+
+var f1 = random();
+f1();
+
+var f2 = random.call(obj1);
+f2();
+
+f1.call(obj1);
